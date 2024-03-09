@@ -119,7 +119,7 @@ button {
   cursor: pointer;
 }
 section {
-  padding: 2rem 2%;
+  padding: 7rem 2%;
 }
 .separator {
   width: 1rem;
@@ -212,7 +212,7 @@ section.home {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 5;
+  z-index: 3;
   background-color: var(--smoky-black-1);
   padding: 2rem 2%;
 }
@@ -371,13 +371,13 @@ section.home {
   animation-delay: 300ms;
 }
 .responsive-navigators {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   padding: 2rem 2%;
   background-color: var(--smoky-black-1);
-  z-index: 10000;
+  z-index: 5;
   overflow: auto;
   transform-origin: left;
   transform: scaleX(0);
@@ -540,12 +540,6 @@ section.home {
   animation-iteration-count: 3;
 }
 @keyframes fadeIn {
-  /* 0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  } */
   from {
     opacity: 0;
   }
@@ -570,4 +564,151 @@ section.home {
   animation: fadeIn 4s ease-in-out alternate;
   animation-iteration-count: 3;
 }
+.book {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+.book .rotate-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: 0.2rem solid var(--gold-crayola);
+  animation: rotate 30s ease infinite;
+  animation-iteration-count: 1;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.book .rotate-image {
+  background-color: var(--gold-crayola);
+  padding: 1rem 3rem;
+}
+.book .rotate-image img {
+  width: 6rem;
+  height: 5rem;
+}
+.book .rotate-image p {
+  text-align: center;
+  font-size: var(--fontSize-label-1);
+  font-weight: var(--weight-bold);
+  color: var(--black);
+  line-height: var(--lineHeight-1);
+  padding-top: 0.5rem;
+}
 /* ===========home contents section ends========= */
+
+/*============= flavour section starts=========== */
+.flavour {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--smoky-black-2);
+}
+.flavours .flavour-desc {
+  text-align: center;
+}
+.flavours .flavour-desc h3 {
+  font-size: var(--fontSize-label-2);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  color: var(--gold-crayola);
+  letter-spacing: var(--letterSpacing-2);
+  padding-bottom: 1.8rem;
+}
+.flavours .flavour-desc img {
+  width: 10rem;
+  padding-bottom: 2rem;
+}
+.flavours .flavour-desc h1 {
+  font-size: var(--fontSize-headline-1);
+  font-family: var(--fontFamily-forum);
+  padding-bottom: 2rem;
+}
+.flavours .flavour-desc p {
+  width: 40%;
+  font-size: var(--fontSize-body-3);
+  padding: 0 2rem;
+  color: var(--white);
+  text-transform: none;
+  font-weight: var(--weight-regular);
+  margin: 0 auto;
+  line-height: var(--lineHeight-3);
+}
+.flavour .box-container {
+  display: flex;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 8rem;
+  width: 100%;
+
+  align-items: center;
+  justify-content: center;
+}
+.flavour .box-container .box:nth-child(2) {
+  margin-top: 12rem;
+}
+.flavour .box-container .box {
+  position: relative;
+  overflow: hidden;
+}
+.flavour .box-container .box .image img {
+  width: 30rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+}
+.flavour .box-container .box .image img:hover {
+  transform: scale(1.1) rotate(-2deg);
+  transition: var(--transition-2);
+}
+.flavour .box-container .box .image-text {
+  margin-top: 5rem;
+  text-align: center;
+}
+.flavour .box-container .box .image-text h3 {
+  font-size: var(--fontSize-body-1);
+  font-family: var(--fontFamily-forum);
+  font-weight: var(--weight-regular);
+  letter-spacing: var(--letterSpacing-1);
+  padding-bottom: 1.5rem;
+}
+.flavour .box-container .box .image-text a {
+  color: var(--gold-crayola);
+  font-weight: var(--weight-bold);
+  font-size: var(--fontSize-label-2);
+  letter-spacing: var(--letterSpacing-1);
+}
+.flavour .box-container .box .image-text a:hover {
+  letter-spacing: var(--letterSpacing-5);
+}
+.flavour-bg-1 {
+  position: absolute;
+  right: 0;
+}
+.flavour-bg-2 {
+  position: absolute;
+  left: 0;
+}
+.flavour-bg-2 img {
+  width: 30rem;
+  animation: upIn 5s ease-in-out alternate infinite;
+  transition: var(--transition-1);
+}
+@keyframes upIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+.flavour-bg-1 img {
+  width: 30rem;
+  animation: upIn 5s ease-in-out alternate infinite;
+  transition: var(--transition-1);
+}
+/* ============= flavour section ends===========  */

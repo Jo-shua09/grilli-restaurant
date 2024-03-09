@@ -5,8 +5,10 @@
 }
 @media (max-width: 768px) {
   .responsive-navigators {
-    width: 50%;
     position: fixed;
+    width: 50%;
+    z-index: 5;
+    height: 100vh;
   }
   .home .header-2 .navigators .nav-items {
     display: none;
@@ -58,5 +60,25 @@
   }
   .home .home-content .contents h1 {
     width: 80%;
+  }
+  .flavour-bg-1,
+  .flavour-bg-2 {
+    visibility: hidden;
+  }
+  .flavours .flavour-desc p {
+    width: 90%;
+  }
+  .flavour .box-container {
+    margin-top: 5rem;
+  }
+  .flavour .box-container .box:nth-child(2) {
+    margin-top: 0;
+  }
+  .flavour .box-container .box .image-text {
+    margin-top: 2rem;
+  }
+  .flavour .box-container .box .image img {
+    padding: 2rem 2%;
+    width: 45rem;
   }
 }
