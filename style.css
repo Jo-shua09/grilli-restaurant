@@ -131,6 +131,41 @@ section {
 i {
   cursor: pointer;
 }
+.btn {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  font-size: var(--fontSize-label-2);
+  font-weight: var(--weight-bold);
+  color: var(--gold-crayola);
+  border: 0.2rem solid var(--gold-crayola);
+  background-color: transparent;
+  letter-spacing: var(--letterSpacing-5);
+  padding: 2.5rem 3rem;
+  text-align: center;
+  width: fit-content;
+  overflow: hidden;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200%;
+  height: 200%;
+  border-radius: var(--radius-circle);
+  background-color: var(--gold-crayola);
+  transition: var(--transition-2);
+  color: var(--black);
+  z-index: -1;
+}
+.btn:is(:hover, :focus-visible) {
+  color: var(--black);
+}
+.btn:is(:hover, :focus-visible)::before {
+  bottom: -50%;
+}
 /*================= general stylngs ========== */
 
 /* =========home and heaser section starts========== */
@@ -214,7 +249,7 @@ section.home {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3;
+  z-index: 7;
   background-color: var(--smoky-black-1);
   padding: 2rem 2%;
 }
@@ -615,6 +650,7 @@ section.home {
   text-align: center;
 }
 
+.dish .box-container .description .content h3,
 .about .box-container .description h3,
 .flavours .flavour-desc h3 {
   font-size: var(--fontSize-label-2);
@@ -625,12 +661,14 @@ section.home {
   padding-bottom: 1.8rem;
 }
 
+.dish .box-container .description .content img,
 .about .box-container .description img,
 .flavours .flavour-desc img {
   width: 10rem;
   padding-bottom: 2rem;
 }
 
+.dish .box-container .description .content h1,
 .about .box-container .description h1,
 .flavours .flavour-desc h1 {
   font-size: var(--fontSize-headline-1);
@@ -638,6 +676,7 @@ section.home {
   font-family: var(--fontFamily-forum);
   padding-bottom: 2rem;
 }
+.dish .box-container .description .content p,
 .about .box-container .description p,
 .flavours .flavour-desc p {
   width: 40%;
@@ -818,9 +857,65 @@ section.about {
 /*============= about section starts ============*/
 
 /*============= dishes section starts ============= */
+section.dish {
+  padding: 0;
+}
 .dish {
   background-color: var(--smoky-black-2);
   width: 100%;
-  height: 100%;
+}
+.dish .box-container {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 8rem;
+}
+.dish .box-container .box {
+  flex: 1 1 45rem;
+  text-align: center;
+}
+.dish .box-container .image-bg img {
+  cursor: pointer;
+  width: 100%;
+}
+.dish .box-container .description {
+  display: flex;
+  gap: 2rem;
+  padding-right: 12rem;
+  margin-top: 10rem;
+  text-align: left;
+}
+.dish .box-container .description .badge {
+  animation: DownUp 10s ease infinite alternate;
+}
+@keyframes DownUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.dish .box-container .description .content p {
+  width: 100%;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+.dish .box-container .description .content h5 {
+  font-size: var(--fontSize-label-1);
+  color: var(--davys-grey);
+  padding-bottom: 4rem;
+}
+.dish .box-container .description .content h5 span {
+  font-size: var(--fontSize-body-1);
+  padding-right: 1rem;
+  color: var(--gold-crayola);
 }
 /*============= dishes section starts ============= */
+
+/* ============ menu section starts =============== */
+
+/* ============ menu section ends =============== */

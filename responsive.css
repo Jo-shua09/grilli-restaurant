@@ -7,8 +7,11 @@
   .responsive-navigators {
     position: fixed;
     width: 50%;
-    z-index: 5;
+    z-index: 100000;
     height: 100vh;
+  }
+  .header-2 {
+    z-index: 1000;
   }
   .home .header-2 .navigators .nav-items {
     display: none;
@@ -43,6 +46,37 @@
   }
   .about .box-container .images .image-3::before {
     height: 35rem;
+  }
+  section.dish {
+    padding-bottom: 7rem;
+  }
+  .dish .box-container .description {
+    margin-top: 7rem;
+    display: block;
+    text-align: center;
+    padding: 0;
+    padding: 0 2%;
+  }
+  .dish .box-container .description .content p {
+    width: 80%;
+  }
+  .dish .box-container .description .badge {
+    margin-bottom: 4rem;
+  }
+  .dish .box-container .description .content a {
+    margin: 0 auto;
+  }
+
+  .dish .box-container .image-bg {
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .dish .box-container .image-bg img:hover {
+    transform: scaleY(1.2);
+  }
+
+  .dish .box-container .image-bg img {
+    height: 60rem;
   }
 }
 @media (max-width: 450px) {
