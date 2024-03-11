@@ -612,6 +612,8 @@ section.home {
 .flavours .flavour-desc {
   text-align: center;
 }
+
+.about .box-container .description h3,
 .flavours .flavour-desc h3 {
   font-size: var(--fontSize-label-2);
   text-transform: uppercase;
@@ -620,15 +622,21 @@ section.home {
   letter-spacing: var(--letterSpacing-2);
   padding-bottom: 1.8rem;
 }
+
+.about .box-container .description img,
 .flavours .flavour-desc img {
   width: 10rem;
   padding-bottom: 2rem;
 }
+
+.about .box-container .description h1,
 .flavours .flavour-desc h1 {
   font-size: var(--fontSize-headline-1);
+  font-weight: var(--weight-regular);
   font-family: var(--fontFamily-forum);
   padding-bottom: 2rem;
 }
+.about .box-container .description p,
 .flavours .flavour-desc p {
   width: 40%;
   font-size: var(--fontSize-body-3);
@@ -645,7 +653,6 @@ section.home {
   flex-wrap: wrap;
   gap: 8rem;
   width: 100%;
-
   align-items: center;
   justify-content: center;
 }
@@ -714,5 +721,104 @@ section.home {
 /* ============= flavour section ends===========  */
 
 /*============= about section starts ============*/
+section.about {
+  padding-bottom: 17rem;
+}
+.about .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.about .box-container .box {
+  flex: 1 1 45rem;
+}
+.about .box-container .description {
+  text-align: center;
+  margin-top: 7rem;
+}
+.about .box-container .description p {
+  width: 80%;
+  padding-bottom: 3rem;
+}
+.about .box-container .description h5 {
+  font-size: var(--fontSize-body-3);
+  font-weight: var(--weight-bold);
+  padding-bottom: 0.5rem;
+  font-family: var(--fontFamily-forum);
+}
+.about .box-container .description h6 {
+  font-size: var(--fontSize-body-1);
+  color: var(--gold-crayola);
+  font-weight: var(--weight-bold);
+  padding-bottom: 2rem;
+  font-family: var(--fontFamily-forum);
+}
+.about .box-container .images {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+.about .box-container .images .image-1 {
+  position: relative;
+}
+.about .box-container .images .image-1 img {
+  width: 100%;
+}
+.about .box-container .images .image-2 {
+  position: absolute;
+  top: -5%;
+  right: -82%;
+  width: 100%;
+}
+.about .box-container .images .image-qlty {
+  position: absolute;
+}
+.about .box-container .images .image-qlty img {
+  width: 12rem;
+  animation: rotate 20s ease-in-out infinite;
+}
+.about .box-container .images .image-yr {
+  position: absolute;
+}
+.about .box-container .images .image-yr img {
+  width: 12rem;
+}
+.about .box-container .images .image-3 {
+  position: absolute;
+  bottom: -12%;
+  left: -10%;
+  animation: upDown 10s ease-in-out alternate infinite;
+}
+@keyframes upDown {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: -11%;
+  }
+}
+.about .box-container .images .image-3 img {
+  position: relative;
+  width: 28rem;
+}
 
+.about .box-container .images .image-3::before {
+  content: "";
+  position: absolute;
+  top: -12%;
+  left: 25%;
+  width: 50%;
+  height: 35rem;
+  background: url("images/img-pattern.svg");
+}
 /*============= about section starts ============*/
+
+/*============= dishes section starts ============= */
+.dish {
+  background-color: var(--smoky-black-2);
+  width: 100%;
+  height: 100%;
+}
+/*============= dishes section starts ============= */

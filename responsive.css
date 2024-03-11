@@ -32,6 +32,18 @@
   .btn-2 span {
     width: 28%;
   }
+  .about .box-container .description {
+    margin-top: 0;
+  }
+  .about .box-container .images {
+    padding: 3rem;
+  }
+  .about .box-container .images .image-3 {
+    left: 0%;
+  }
+  .about .box-container .images .image-3::before {
+    height: 35rem;
+  }
 }
 @media (max-width: 450px) {
   html {
@@ -80,5 +92,12 @@
   .flavour .box-container .box .image img {
     padding: 2rem 2%;
     width: 45rem;
+  }
+  .about .box-container .description p {
+    width: 100%;
+  }
+  .about .box-container .images .image-2 {
+    top: -7%;
+    right: -79%;
   }
 }
