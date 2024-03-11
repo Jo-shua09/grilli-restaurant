@@ -120,6 +120,7 @@ button {
 }
 section {
   padding: 7rem 2%;
+  overflow: hidden;
 }
 .separator {
   width: 1rem;
@@ -212,6 +213,7 @@ section.home {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 3;
   background-color: var(--smoky-black-1);
   padding: 2rem 2%;

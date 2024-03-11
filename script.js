@@ -1,14 +1,12 @@
 // ===========NAVBAR SETTINGS===========
 // ================STICKY NAVBAR=================
-const header = document.querySelectorAll(".header-2");
+const header = document.querySelector(".header-2");
 window.addEventListener("scroll", function () {
-  header.forEach(function (element) {
-    if (this.window.scrollY <= 0) {
-      element.classList.remove("stick");
-    } else {
-      element.classList.add("stick");
-    }
-  });
+  if (this.window.scrollY <= 0) {
+    header.classList.remove("stick");
+  } else {
+    header.classList.add("stick");
+  }
 });
 // ================STICKY NAVBAR=================
 
