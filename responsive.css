@@ -173,9 +173,8 @@
     padding-bottom: 2rem;
   }
   .reserve .reserve-container .reserve-form .persons {
-    display: block;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 3rem;
     width: 100%;
     justify-content: center;
   }
