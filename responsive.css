@@ -148,7 +148,7 @@
   }
   .reserve .reserve-container .reserve-form .persons {
     flex-wrap: wrap;
-    gap: 2.5rem;
+    gap: 3rem;
     width: 100%;
     justify-content: center;
   }
@@ -160,5 +160,8 @@
   }
   .reserve .reserve-container .reserve-form .persons i {
     display: none;
+  }
+  .blog .blog-container {
+    padding: 0 3rem;
   }
 }
