@@ -1,4 +1,11 @@
 // ================LOADER=============
+
+const preloader = document.querySelector(".loader-container");
+window.addEventListener("load", function () {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});
+
 window.onload = function () {
   let content = document.querySelector(".content");
   content.classList.add(enter);
