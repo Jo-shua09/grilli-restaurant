@@ -2,6 +2,15 @@
   html {
     font-size: 55%;
   }
+  section.reserve {
+    height: 120vh;
+  }
+  .reserve .reserve-container {
+    top: 58%;
+  }
+  section.contact {
+    padding-bottom: 10rem;
+  }
 }
 @media (max-width: 768px) {
   .responsive-navigators {
@@ -83,6 +92,17 @@
     padding: 2rem;
   }
 }
+@media (max-width: 650px) {
+  section.reserve {
+    height: 100vh;
+  }
+  .reserve .reserve-container {
+    top: 58%;
+  }
+  section.contact {
+    padding-bottom: 10rem;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 49.5%;
@@ -138,13 +158,19 @@
     top: -7%;
     right: -79%;
   }
+  section.reserve {
+    height: 105vh;
+  }
+  section.contact {
+    padding-bottom: 10rem;
+  }
   .reserve .reserve-container {
     position: absolute;
     top: 55%;
     width: 100%;
   }
   .reserve .reserve-container .reserve-form {
-    padding-bottom: 3rem;
+    padding-bottom: 2rem;
   }
   .reserve .reserve-container .reserve-form .persons {
     flex-wrap: wrap;

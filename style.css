@@ -1236,9 +1236,18 @@ section.reserve {
   width: 100%;
   justify-content: space-between;
 }
-.reserve .reserve-container .reserve-form .persons input,
+.reserve .reserve-container .reserve-form .persons input {
+  width: 100%;
+  height: 6rem;
+  font-size: var(--fontSize-label-1);
+  background-color: var(--eerie-black-1);
+  border: 0.1rem solid var(--quick-silver);
+  color: var(--white);
+  color: var(--white);
+  font-family: var(--fontFamily-dm_sans);
+}
 .reserve .reserve-container .reserve-form .persons select {
-  width: fit-content;
+  width: 100%;
   height: 6rem;
   font-size: var(--fontSize-label-1);
   background-color: var(--eerie-black-1);
@@ -1317,6 +1326,7 @@ section.reserve {
   padding-bottom: 4rem;
   line-height: var(--lineHeight-3);
 }
+
 /*============ contact section ends ==============*/
 
 /* ===========features section starts============== */
