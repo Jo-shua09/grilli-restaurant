@@ -1,3 +1,10 @@
+// ================LOADER=============
+window.onload = function () {
+  let content = document.querySelector(".content");
+  content.classList.add(enter);
+};
+// ================LOADER=============
+
 // ===========NAVBAR SETTINGS===========
 // ================STICKY NAVBAR=================
 const header = document.querySelector(".header-2");

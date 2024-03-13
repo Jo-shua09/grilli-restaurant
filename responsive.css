@@ -47,9 +47,6 @@
   .about .box-container .images .image-3::before {
     height: 35rem;
   }
-  section.dish {
-    padding-bottom: 7rem;
-  }
   .dish .box-container .description {
     margin-top: 7rem;
     display: block;
@@ -66,7 +63,6 @@
   .dish .box-container .description .content a {
     margin: 0 auto;
   }
-
   .dish .box-container .image-bg {
     overflow: hidden;
     object-fit: cover;
@@ -74,9 +70,17 @@
   .dish .box-container .image-bg img:hover {
     transform: scaleY(1.2);
   }
-
   .dish .box-container .image-bg img {
     height: 60rem;
+  }
+  .menu .menu-container .box-container {
+    gap: 0;
+  }
+  .menu .menu-container .time-btn {
+    margin-top: 0rem;
+  }
+  .reserve .reserve-container .reserves {
+    padding: 2rem;
   }
 }
 @media (max-width: 450px) {
@@ -133,5 +137,28 @@
   .about .box-container .images .image-2 {
     top: -7%;
     right: -79%;
+  }
+  .reserve .reserve-container {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+  }
+  .reserve .reserve-container .reserve-form {
+    padding-bottom: 3rem;
+  }
+  .reserve .reserve-container .reserve-form .persons {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .reserve .reserve-container .reserve-form .persons input,
+  .reserve .reserve-container .reserve-form .persons select {
+    width: fit-content;
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+  }
+  .reserve .reserve-container .reserve-form .persons i {
+    display: none;
   }
 }
