@@ -88,6 +88,9 @@
   .menu .menu-container .time-btn {
     margin-top: 0rem;
   }
+  .reserve .reserve-container {
+    top: 70%;
+  }
   .reserve .reserve-container .reserves {
     padding: 2rem;
   }
@@ -174,9 +177,14 @@
   }
   .reserve .reserve-container .reserve-form .persons {
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
     width: 100%;
     justify-content: center;
+  }
+  .select,
+  .day,
+  .select {
+    flex: 1 1 20rem;
   }
   .reserve .reserve-container .reserve-form .persons input,
   .reserve .reserve-container .reserve-form .persons select {
