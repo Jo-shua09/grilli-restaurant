@@ -1238,6 +1238,7 @@ section.reserve {
 .select,
 .day,
 .select {
+  width: 100%;
   flex: 1 1 15rem;
 }
 .reserve .reserve-container .reserve-form .persons input {
