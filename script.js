@@ -1,5 +1,4 @@
 // ================LOADER=============
-
 const preloader = document.querySelector(".loader-container");
 window.addEventListener("load", function () {
   preloader.classList.add("loaded");
@@ -40,6 +39,11 @@ closeNav.addEventListener("click", () => {
   navBar.classList.remove("show");
   navitems.classList.remove("hide");
 });
+
+window.onscroll = function () {
+  navBar.classList.remove("show");
+  navitems.classList.remove("hide");
+};
 //===============RESPONSIVE NAVBAR==============
 
 //===========NAVBAR SETTINGS===========

@@ -1244,11 +1244,12 @@ section.reserve {
 }
 .reserve .reserve-container .reserve-form .persons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-bottom: 2rem;
-  position: relative;
-  gap: 2rem;
   width: 100%;
+  gap: 1.5rem;
+  position: relative;
 }
 .select,
 .day,

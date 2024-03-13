@@ -161,8 +161,11 @@
     top: -7%;
     right: -79%;
   }
+  .contact .contact-container .contact-text p {
+    width: 90%;
+  }
   section.reserve {
-    height: 105vh;
+    height: 102vh;
   }
   section.contact {
     padding-bottom: 10rem;
@@ -171,26 +174,6 @@
     position: absolute;
     top: 55%;
     width: 100%;
-  }
-  .reserve .reserve-container .reserve-form {
-    padding-bottom: 2rem;
-  }
-  .reserve .reserve-container .reserve-form .persons {
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
-  }
-  .select,
-  .day,
-  .select {
-    flex: 1 1 20rem;
-  }
-  .reserve .reserve-container .reserve-form .persons input,
-  .reserve .reserve-container .reserve-form .persons select {
-    width: fit-content;
-    padding-right: 2rem;
-    padding-left: 0.5rem;
   }
   .reserve .reserve-container .reserve-form .persons i {
     display: none;
