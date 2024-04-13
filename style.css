@@ -159,6 +159,7 @@ i {
   padding: 2.5rem 3rem;
   text-align: center;
   width: fit-content;
+  width: -moz-fit-content;
   overflow: hidden;
 }
 .btn::before {
@@ -1316,6 +1317,7 @@ section.reserve {
   background-size: cover;
   background-position: center;
   backdrop-filter: brightness(0.2);
+  -webkit-backdrop-filter: brightness(0.2);
   padding: 6rem;
 }
 .reserve .reserve-container .contact .contact-text {
@@ -1502,6 +1504,7 @@ section.footer {
   background-repeat: no-repeat;
   background-size: cover;
   backdrop-filter: brightness(0.2);
+  -webkit-backdrop-filter: brightness(0.2);
   background-position: center;
   position: relative;
   width: 100%;
